@@ -136,7 +136,52 @@ font-family: 'PT Sans', sans-serif; */
 /* **************************************************************** */
 
 .home2 {
+  margin-top: 24px;
+  display: flex;
 }
+
+.home2Left {
+  background-color: #fff;
+  padding: 32px;
+}
+
+.home2Left .subtext {
+  line-height: 28px;
+  margin-bottom: 30px;
+}
+
+.home2IconsContainer {
+  padding-bottom: 20px;
+  border-bottom: 0.8px solid #828282;
+  margin-bottom: 30px;
+}
+
+.home2IconsContainer .iconBtn {
+  background-color: #bebebe;
+  border-radius: 100%;
+  border: 0;
+  padding: 3px;
+  width: 24px;
+  height: 24px;
+}
+
+.schedule .subHeading {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+}
+
+.schedule .dateContainer {
+  display: flex;
+}
+
+.schedule .dateContainer > * {
+  padding: 0 10px;
+}
+
+.home2Right {
+  min-width: 400px;
+}
+
 /* **************************************************************** */
 
 .home3 {
