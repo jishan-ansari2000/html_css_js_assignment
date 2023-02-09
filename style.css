@@ -180,6 +180,24 @@ font-family: 'PT Sans', sans-serif; */
 
 .home2Right {
   min-width: 400px;
+  width: 400px;
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.85),
+      rgba(255, 255, 255, 0.85)
+    ),
+    #f39b4e;
+  padding: 32px;
+}
+
+.home2Right .imageContainer {
+  text-align: center;
+  margin: 0px auto 32px;
+  width: fit-content;
+}
+
+.home2Right .imageContainer img {
+  border-radius: 100%;
 }
 
 /* **************************************************************** */
