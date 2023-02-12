@@ -205,16 +205,14 @@ body {
   border-radius: 100%;
 }
 
-/* **************************************************************** */
-
-.home3 {
+.home2Bottom {
   padding: 36px 80px;
   background-image: url("image/home2Bottom.svg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.home3Container {
+.home2BottomContainer {
   display: flex;
   padding: 45px 20px;
   background: #ffffff;
@@ -223,9 +221,160 @@ body {
   border-radius: 16px;
 }
 
-.home3 .subtext {
+.home2Bottom .subtext {
   font-size: 24px;
   text-align: center;
 
   line-height: 34px;
+}
+
+/* **************************************************************** */
+
+.home3 {
+  background-color: #fff;
+  margin-top: 24px;
+  padding: 32px;
+}
+
+.home3Container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.home3Container > * {
+  min-width: 300px;
+  width: 300px;
+}
+
+.linkMore {
+  display: inline-block;
+  text-decoration: none;
+  color: #dc3636;
+  margin-top: 16px;
+}
+
+.CancelationContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.CancelationContainer > * {
+  max-width: 264px;
+  min-width: 250px;
+}
+
+.footer {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #434343;
+}
+
+.footerTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.footerLinkContainer {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 26px;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  margin: 0;
+}
+
+.footerLinkContainer > * {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footerTopRight {
+  min-width: 380px;
+}
+
+.footerSubHeading {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  margin: 0 0 20px 0;
+}
+
+.footerInputContainer {
+  display: flex;
+  text-align: center;
+  padding: 3px;
+  background-color: #fff;
+  border-radius: 30px;
+  width: 100%;
+}
+
+.footerInput {
+  display: inline-block;
+  padding: 8px;
+  width: 100%;
+  font-size: 16px;
+  border-radius: 30px;
+  color: #787579;
+  border: 0;
+  outline: none;
+}
+
+.footerInput:focus {
+  border: 0;
+}
+
+.footerContact {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.footerContact .footerIconsContainer {
+  padding-bottom: 12px;
+}
+
+.footerContact .footerIconsContainer .iconBtn {
+  border-radius: 100%;
+  border: 0;
+  padding: 3px;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+}
+
+.footer .footerPrivacy {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.footer .footerPrivacy > * {
+  color: #fff;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.01em;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 1200px) {
+}
+
+@media only screen and (max-width: 992px) {
+}
+
+@media only screen and (max-width: 768px) {
+}
+
+@media only screen and (max-width: 600px) {
+}
+
+@media only screen and (max-width: 600px) {
 }
