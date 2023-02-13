@@ -305,6 +305,7 @@ body {
 }
 
 .footerLinkContainer > * {
+  display: inline-block;
   color: #ffffff;
   text-decoration: none;
 }
@@ -353,10 +354,12 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: end;
+  flex-wrap: wrap;
 }
 
 .footerContact .footerIconsContainer {
   padding-bottom: 12px;
+  margin-top: 20px;
 }
 
 .footerContact .footerIconsContainer .iconBtn {
@@ -455,6 +458,14 @@ body {
   .home2Bottom {
     padding: 36px 50px;
   }
+
+  .footerTop {
+    flex-wrap: wrap;
+  }
+
+  .footerLinkContainer {
+    margin-bottom: 30px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -511,7 +522,7 @@ body {
   }
 
   .home1 {
-    padding: 10px;
+    padding: 30px 10px;
   }
 
   .home1BtnBoxRight {
@@ -537,6 +548,12 @@ body {
   .home3Container > * {
     min-width: 200px;
     width: 300px;
+  }
+
+  .footerTopRight {
+    min-width: 280px;
+    max-width: 380px;
+    width: 100%;
   }
 }
 
