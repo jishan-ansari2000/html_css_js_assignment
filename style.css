@@ -24,9 +24,15 @@ body {
   border-radius: 30px;
   border: 0;
   margin-right: 10px;
+  cursor: pointer;
 }
 
-.subHeading {
+.btn:active {
+  scale: 0.98;
+  opacity: 0.8;
+}
+
+.btn .subHeading {
   font-family: "PT Sans";
   font-size: 24px;
   color: #434343;
@@ -208,6 +214,11 @@ body {
   letter-spacing: 0.02em;
 
   color: #ffffff;
+  cursor: pointer;
+}
+
+.home1Right button:active {
+  opacity: 0.9;
 }
 
 .home1RightSub {
@@ -234,6 +245,18 @@ body {
 .home1bottom > * .icon {
   padding: 12px 20px;
   color: #dc3636;
+}
+
+.home1RightBottom {
+  border: 1px solid #434343;
+  border-radius: 8px;
+  padding: 8px 16px;
+  margin-top: 24px;
+  cursor: pointer;
+}
+
+.home1RightBottom:active {
+  background-color: #e7e7e7;
 }
 
 /* **************************************************************** */
@@ -266,6 +289,11 @@ body {
   padding: 3px;
   width: 24px;
   height: 24px;
+  cursor: pointer;
+}
+
+.home2IconsContainer .iconBtn:active {
+  background-color: #909090;
 }
 
 .schedule .subHeading {
@@ -304,13 +332,37 @@ body {
 }
 
 .home2Bottom {
-  padding: 36px 80px;
+  padding: 36px 0px;
   background-image: url("image/home2Bottom.svg");
   background-repeat: no-repeat;
   background-size: cover;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.slideBtn {
+  background: transparent;
+  color: #fff;
+  border: 0;
+  font-weight: 900;
+  cursor: pointer;
+  border-radius: 100%;
+  padding: 8px 12px;
+  background-color: ;
+}
+
+.slideBtn:hover {
+  background-color: #9f9f9f;
+}
+
+.slideBtn:active {
+  background-color: #727272;
 }
 
 .home2BottomContainer {
+  width: 80%;
   display: flex;
   padding: 45px 20px;
   background: #ffffff;
@@ -328,6 +380,25 @@ body {
 
 .home2IconImgContainer {
   margin: auto 30px;
+}
+
+.mySlides {
+  display: none;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /* **************************************************************** */
@@ -457,6 +528,19 @@ body {
   width: 40px;
   height: 40px;
   background-color: transparent;
+  cursor: pointer;
+}
+
+.footerContact .footerIconsContainer .iconBtn:nth-child(2) {
+  background-color: #f39b4e;
+}
+
+.footerContact .footerIconsContainer .iconBtn:active {
+  background-color: #353535;
+}
+
+.footerContact .footerIconsContainer .iconBtn:nth-child(2):active {
+  background-color: #fa8620;
 }
 
 .footer .footerPrivacy {
@@ -576,10 +660,6 @@ body {
     width: 100%;
   }
 
-  .home2Bottom {
-    padding: 36px 50px;
-  }
-
   .footerTop {
     flex-wrap: wrap;
   }
@@ -622,10 +702,6 @@ body {
   .home2Right {
     padding: 20px;
     width: 100%;
-  }
-
-  .home2Bottom {
-    padding: 30px;
   }
 
   .home2BottomContainer {

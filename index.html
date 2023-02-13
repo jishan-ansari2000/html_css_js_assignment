@@ -95,10 +95,7 @@
                         </div>
                         <button>Sign Up</button>
                     </div>
-                    <div style="border: 1px solid #434343;
-                        border-radius: 8px;
-                        padding: 8px 16px;
-                        margin-top: 24px;">
+                    <div class="home1RightBottom" >
                         <p class="subtext" style="font-weight: 700;">Apply for Reduced-Rate Spot</p>
                     </div>
                 </div>
@@ -202,18 +199,56 @@
         </div>
 
         <div class="home2Bottom">
-            <div class="home2BottomContainer">
-                <div class="home2IconImgContainer">
-                    <img src="image/home2Icon1.svg" alt="icon1" />
+            <button class="slideBtn" onclick="plusSlides(-1)">
+                <i class="fa-sharp fa-regular fa-less-than fa-lg"></i>
+            </button>
+
+                <div class="home2BottomContainer mySlides fade">
+                    <div class="home2IconImgContainer">
+                        <img src="image/home2Icon1.svg" alt="icon1" />
+                    </div>
+                    <div>
+                        <p class="subtext">Erin was a wonderful teacher. She was personable, kind, organized, and great with
+                            facilitating group discussion.
+                            <br /><strong>Katy L.</strong>
+                        </p>
+                    </div>
+                    <div class="home2IconImgContainer">
+                        <img src="image/home2Icon2.svg" alt="icon2" />
+                    </div>
                 </div>
-                <div>
-                    <p class="subtext">Erin was a wonderful teacher. She was personable, kind, organized, and great with
-                        facilitating group discussion.
-                        <br /><strong>Katy L.</strong>
-                    </p>
+                <div class="home2BottomContainer mySlides fade">
+                    <div class="home2IconImgContainer">
+                        <img src="image/home2Icon1.svg" alt="icon1" />
+                    </div>
+                    <div>
+                        <p class="subtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse urna augue, sodales quis urna vitae, tempus dignissim.
+                            <br /><strong>Katy L.</strong>
+                        </p>
+                    </div>
+                    <div class="home2IconImgContainer">
+                        <img src="image/home2Icon2.svg" alt="icon2" />
+                    </div>
                 </div>
-                <div class="home2IconImgContainer"><img src="image/home2Icon2.svg" alt="icon2" /></div>
+                <div class="home2BottomContainer mySlides fade">
+                    <div class="home2IconImgContainer">
+                        <img src="image/home2Icon1.svg" alt="icon1" />
+                    </div>
+                    <div>
+                        <p class="subtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus purus justo, porttitor id mi et, faucibus ornare massa. Suspendisse ut.
+                            <br /><strong>Katy L.</strong>
+                        </p>
+                    </div>
+                    <div class="home2IconImgContainer">
+                        <img src="image/home2Icon2.svg" alt="icon2" />
+                </div>
             </div>
+
+
+
+            <button class="slideBtn" onclick="plusSlides(1)">
+                <i class="fa-sharp fa-regular fa-greater-than fa-lg"></i>
+            </button>
         </div>
 
         <!-- ******************************* home3 **************************** -->
@@ -310,7 +345,7 @@
                 <button class="iconBtn" style="margin: auto 5px auto 0; border: 2px solid #F39B4E;">
                     <i class="fa-brands fa-twitter fa-lg" style="color: #fff;"></i>
                 </button>
-                <button class="iconBtn" style="margin: auto 5px auto 0; background-color: #F39B4E;">
+                <button class="iconBtn" style="margin: auto 5px auto 0;">
                     <i class="fa-brands fa-facebook-f fa-lg" style="color: #fff;"></i>
                 </button>
                 <button class="iconBtn" style="margin: auto 5px auto 0; border: 2px solid #F39B4E;">
@@ -320,7 +355,7 @@
         </div>
         <div class="footerPrivacy">
             <p class="subtext"> &#169; 2022 All rights reserved.</p>
-            <a href="#" class="subtext">Privacy & Terms</a>
+            <a href="#" class="subtext" style="cursor: pointer;">Privacy & Terms</a>
         </div>
     </div>
 
