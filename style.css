@@ -66,6 +66,7 @@ body {
 
 .home1Top {
   display: flex;
+  flex-direction: row;
 }
 
 .home1Heading {
@@ -83,9 +84,18 @@ body {
 .home1BtnBox {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .home1BtnBox > * {
+  margin-top: 12px;
+}
+
+.home1BtnBox > *:first-child {
+  margin-right: 16px;
+}
+
+.home1BtnBoxRigh > *:first-child {
   margin-right: 16px;
 }
 
@@ -228,6 +238,10 @@ body {
   line-height: 34px;
 }
 
+.home2IconImgContainer {
+  margin: auto 30px;
+}
+
 /* **************************************************************** */
 
 .home3 {
@@ -239,11 +253,13 @@ body {
 .home3Container {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .home3Container > * {
   min-width: 300px;
   width: 300px;
+  margin-top: 30px;
 }
 
 .linkMore {
@@ -256,11 +272,13 @@ body {
 .CancelationContainer {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .CancelationContainer > * {
   max-width: 264px;
   min-width: 250px;
+  margin-top: 30px;
 }
 
 .footer {
@@ -365,16 +383,185 @@ body {
 }
 
 @media only screen and (max-width: 1200px) {
+  .sidePadding {
+    padding-left: 130px;
+    padding-right: 130px;
+  }
+
+  .home1Heading {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .home1bottom {
+    flex-wrap: wrap;
+  }
+
+  .home1bottom > * {
+    width: 49%;
+  }
+
+  .home1bottom > *:last-child {
+    margin-top: 20px;
+  }
+
+  .home2Right {
+    min-width: 330px;
+    width: 330px;
+  }
 }
 
 @media only screen and (max-width: 992px) {
+  .sidePadding {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .home1Top {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .home1BtnBox {
+    width: fit-content;
+    margin: 0 auto 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .home1bottomContainer {
+    width: fit-content;
+    width: 295px;
+    margin: 0 auto;
+  }
+
+  .home1bottom > * {
+    display: flex;
+    border-right: 0;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .home2 {
+    flex-wrap: wrap;
+  }
+
+  .home2Right {
+    min-width: 200px;
+    width: 100%;
+  }
+
+  .home2Bottom {
+    padding: 36px 50px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
+  .sidePadding {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
+  .home1Heading {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .subHeading {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .subtext {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .home2Left {
+    padding: 20px;
+    width: 100%;
+  }
+
+  .home2Right {
+    padding: 20px;
+    width: 100%;
+  }
+
+  .home2Bottom {
+    padding: 30px;
+  }
+
+  .home2BottomContainer {
+    padding: 45px 0px;
+  }
+
+  .home2Bottom .subtext {
+    font-size: 18px;
+    text-align: center;
+
+    line-height: 28px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
+  .sidePadding {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .home1 {
+    padding: 10px;
+  }
+
+  .home1BtnBoxRight {
+    width: 100%;
+  }
+
+  .home1BtnBox > *:first-child {
+    margin-right: 0;
+  }
+
+  .home1BtnBoxRigh > *:first-child {
+    margin-right: 12px;
+  }
+
+  .home2IconImgContainer {
+    margin: auto 10px;
+  }
+
+  .home2IconImgContainer > img {
+    scale: 0.7;
+  }
+
+  .home3Container > * {
+    min-width: 200px;
+    width: 300px;
+  }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 420px) {
+  .sidePadding {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .home2IconImgContainer {
+    margin: auto 4px;
+  }
+
+  .home2BottomContainer {
+    padding: 24px 0px;
+  }
+
+  .home2IconImgContainer > img {
+    scale: 0.5;
+  }
+
+  .home2Bottom .subtext {
+    font-size: 14px;
+    text-align: center;
+
+    line-height: 20px;
+  }
 }
